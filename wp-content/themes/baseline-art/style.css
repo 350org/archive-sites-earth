@@ -1,0 +1,153 @@
+/*
+ Theme Name:   350 Baseline Art Child Theme - 350.org
+ Template: 	   baseline
+ Theme URI:    http://baseline.350.org
+ Description:  Art 350 child theme, Baseline parent theme
+ Author:       Matthew Anderson
+ Author URI:   http://matthewanderson.cc
+ Version:      1.0.0
+ Text Domain:  bl-art
+*/
+#body-mobile-background{
+	opacity: .6;
+}
+
+#content{
+	clear: both;
+}
+
+section {
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    order: 5;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.text-underline-thick-orange-trans{
+  box-shadow:0 -0.35em 0 rgba(255,169,2,0.8) inset;}
+
+.lazy-image-wrapper{
+  background:rgba(0,0,0,0.1);
+}
+
+.lazy-image-wrapper img.lazy{
+  width: 100%;
+}
+
+#container nav#language-nav{
+	text-align: center !important;
+}
+
+@media screen and (min-width:900px){
+
+	.bg-on .site-nav.bg-transparent{
+	  background-image: -moz-linear-gradient(top, rgba(23,41,46,0.4) 0%, rgba(23,41,46,0) 100%); /* FF3.6-15 */
+	  background-image: -webkit-linear-gradient(top, rgba(23,41,46,0.4) 0%,rgba(23,41,46,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	  background-image: linear-gradient(to bottom, rgba(23,41,46,0.4) 0%,rgba(23,41,46,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b317292e', endColorstr='#0017292e',GradientType=0 ); /* IE6-9 */
+	  background-image:linear-gradient(to bottom, rgba(23,41,46,0.4) 0%,rgba(23,41,46,0) 100%);}
+	.site-nav .section-inner{
+	  text-align:right;
+	  max-width:98%;}
+
+	nav.nav-desktop-dropdown.bg-transparent a{
+	  background-color:transparent;}
+	#language-nav{
+		text-align:center;
+	}
+
+	nav.nav-desktop-dropdown.bg-transparent a{
+		background-color:transparent;
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+
+	.posts-layout-cards .post{
+		margin-bottom: 2em;
+	}
+
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+#page-header{
+	clear: both;
+}
+
+
+/* adjusting homepage top section peek */
+.title-section-60{
+  min-height:calc(100vh - 120px);}
+
+
+@supports ((display: -ms-grid) or (display: grid)) {
+.posts-layout-cards .post-list,
+.single-super_pages .posts-layout-cards .section-inner{
+	/* autoprefixer: off */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	grid-gap: 1rem;
+}
+
+/* Post layout: cards (desktop) */
+.posts-layout-cards .post{
+  float:none;
+  margin:0;
+  width:auto;
+  position: static;
+}
+.posts-layout-cards .post-text{
+  padding-top:0.5em;}
+
+.posts-layout-cards #post-1{
+  border-bottom:none;
+  margin-bottom:0;
+  padding-bottom:0;
+  width:auto;}
+.posts-layout-cards #post-1 .post-thumbnail{
+  float:none;
+  margin:0;
+  width:auto;}
+.posts-layout-cards #post-1 .post-text{
+  padding-top:.5em;
+  width:auto;}
+.posts-layout-cards .post .post-title {
+    font-size: 1.25rem !important;
+}.posts-layout-cards #post-1 .post-excerpt{
+  font-size:inherit;}
+.post-thumbnail{
+  float: none;
+  margin: 0;
+  width: auto;
+    max-height: 250px;
+  overflow: hidden;
+}
+
+.posts-layout-cards .post .post-title{
+	font-size: 1.25rem;
+}
+
+.post-text{
+	margin: 0 !important;
+	width: auto !important;
+}
